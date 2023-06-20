@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thông tin thời tiết</title>
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
+  <link rel="shortcut icon" href="https://www.andon.vn/wp-content/uploads/2020/08/quan-ly-nhiet-do-tong-quat2-min.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" >
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h1>Thông tin thời tiết</h1>
+    <div class="weather-info">
+      <div class="weather-card">
+        <h2 class="weather-card__title">Nhiệt độ</h2>
+        <i class="fas fa-thermometer-half"></i>
+        <canvas id="temperature-chart"></canvas>
+        <p id="temperature" class="weather-card__data">Loading...</p>
+      </div>
+      <div class="weather-card">
+        <h2 class="weather-card__title">Độ ẩm</h2>
+        <i class="fas fa-tint"></i>
+        <canvas id="humidity-chart"></canvas>
+        <p id="humidity" class="weather-card__data">Loading...</p>
+      </div>
+      <div class="weather-card">
+        <h2 class="weather-card__title">Lượng mưa</h2>
+        <i class="fas fa-cloud-showers-heavy"></i>  
+        <canvas id="rainfall-chart"></canvas>
+        <p id="rainfall" class="weather-card__data" >Loading...</p>
+      </div>
+    </div>
+  </div>
+  <script src="./static/script.js"></script>
+</body>
+</html>
+
